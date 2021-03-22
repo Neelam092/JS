@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../bootstrap/css/style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title> Math Table</title>
+
+</head>
+<body>
+   <nav class="navbar-dark bg-dark ">
+       <a href="#" class="navbar-brand" style="font-size: 30px"> Math Table</a>
+   </nav>
+
+   <!---------- Math Table ----------->
+   <div class="container mt-3">
+       <div class="row">
+           <div class="col">
+               <div class="card">
+                   <div class="card-header young-passion-gradient text-white">
+                      <h3>Kids Math Table</h3>
+                   </div>
+                   <div class="card-body">
+                       <form >
+                           <div class="row">
+                               <div class="col-md-4">
+                                   <div class="form-group">
+                                       <label >Enter a Number</label>
+                                       <input id="req-number" type="number" class="form-control" placeholder="Your Number">
+                                   </div>
+                               </div>
+                               <div class="col-md-8">
+                                   <div class="form-group">
+                                       <label for="multiplier" class="form-label"> Select the Multiplier</label>
+                                       <input type="range" class="custom-range" id="multiplier" min="1" max="10" value="1">
+                                   </div>
+                               </div>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-----------Result Section ------------>
+   <div class="container">
+       <div class="row">
+           <div class="col">
+               <div class="card">
+                   <div class="card-body bg-light">
+                       <div class="row align-items-center">
+                           <div class="col-md-2">
+                               <h1 class="display-2">
+                                   <span class="badge badge-secondary" style="background: linear-gradient(45deg,lightsalmon,palevioletred)" id="number">1</span>
+                               </h1>
+                           </div>
+                           <div class="col-md-2">
+                               <h1>
+                                   <i class="fa fa-times fa-2x text-secondary"></i>
+                               </h1>
+                           </div>
+                           <div class="col-md-2">
+                               <h1 class="display-2">
+                                   <span class="badge badge-secondary" style="background: linear-gradient(45deg,lightsalmon,palevioletred)" id="multi">1</span>
+                               </h1>
+                           </div>
+                           <div class="col-md-2">
+                               <h1>
+                                   <i class="fa fa-equals fa-2x text-secondary"></i>
+                               </h1>
+                           </div>
+                           <div class="col-md-2">
+                               <h1 class="display-2">
+                                   <span class="badge badge-secondary" style="background: linear-gradient(45deg,lightsalmon,palevioletred)" id="result">1</span>
+                               </h1>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+<!------- Bootstrap JS files ---------->
+<script src="../bootstrap/js/jquery.js"></script>
+<script src="../bootstrap/js/popper.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../bootstrap/js/mdb.js"></script>
+
+<!---- Local js file---------->
+<script src="app.js"></script>
+</body>
+</html>
